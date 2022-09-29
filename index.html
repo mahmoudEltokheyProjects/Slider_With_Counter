@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Slider</title>
+    </head>
+
+    <body>
+        <!-- ++++++++++++++++++++++++++++++++++++ Banner ++++++++++++++++++++++++++++++++++++ -->
+        <section class="banner-section">
+            <div class="content">
+                <!-- ------------------ image Gallery ------------------ -->
+                <div class="overlay_slider"></div>
+                <div class="images">
+                    <!-- ============== image 1 ============== -->
+                    <img src="imgs/place1.jpg" alt="place1" />
+                    <!-- ============== image 2 ============== -->
+                    <img src="imgs/place10.jpg" alt="place2" />
+                    <!-- ============== image 3 ============== -->
+                    <img src="imgs/place11.jpg" alt="place3" />
+                    <!-- ============== image 4 ============== -->
+                    <img src="imgs/maxresdefault.jpg" alt="place4" />
+                    <!-- ============== image 5 ============== -->
+                    <img src="imgs/place14.jpg" alt="place4" />
+                </div>
+                <!-- ------------------ slider circles ------------------ -->
+                <div class="btn-sliders">
+                    <span onclick="btn_slide(1)"></span>
+                    <span onclick="btn_slide(2)"></span>
+                    <span onclick="btn_slide(3)"></span>
+                    <span onclick="btn_slide(4)"></span>
+                    <span onclick="btn_slide(5)"></span>
+                </div>
+                <!-- ------------------ Slider arrows ------------------ -->
+                <!-- left arrow -->
+                <div onclick="side_slide(-1)" class="slide left">
+                    <i class="fa fa-chevron-left"></i>
+                </div>
+                <!-- right arrow -->
+                <div onclick="side_slide(1)" class="slide right">
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+
+            </div>
+        </section>
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+
+</html>
